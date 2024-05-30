@@ -97,3 +97,36 @@
 .pagination-btn-num {
     color: #B71C1C;
 }
+
+.news-time-stamp {
+    text-wrap: nowrap;
+}
+
+.text-theme-red {
+    color: #B71C1C;
+}
+
+.bg-theme-red {
+    background-color: #B71C1C;
+}
+
+.bg-theme-red:hover {
+    background-color: #971717;
+}
+
+.bg-theme-red:focus {
+    background-color: #971717;
+}
+
+.btn-custom-primary {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: #B71C1C;
+    --bs-btn-border-color: #B71C1C;
+    --bs-btn-hover-bg: #971717;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-border-color: #971717;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-white);
+    --bs-btn-active-bg: #971717;
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
