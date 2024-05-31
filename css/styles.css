@@ -20,6 +20,48 @@
     }
 }
 
+.info-container {
+    display: none !important;
+}
+
+.small-info-container {
+    display: flex;
+}
+
+.search-bar {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .info-container {
+        display: flex !important;
+    }
+
+    .small-info-container {
+        display: none;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .small-screen-font {
+        font-size: 10px;
+    }
+}
+
+.price-container {
+    display: none !important;
+}
+
+@media only screen and (min-width: 600px) {
+    .price-container {
+        display: flex !important;
+    }
+}
+
 .news-heading {
     font-weight: 700 !important;
     color: black;
@@ -36,7 +78,7 @@
 
 .logo {
     max-width: 6vmax !important;
-    min-width: 6vmax;
+    min-width: 16vmax;
 }
 
 .w-1 {
@@ -47,6 +89,7 @@
     border: 1px solid #777777;
     width: 1px;
     height: 70%;
+    margin-top: .7rem;
 }
 
 .heading-container {
@@ -60,8 +103,12 @@
     width: fit-content;
 }
 
+/* .info-card-container-day {
+    padding: 13px 0 14px 0;
+} */
+
 .news-img {
-    width: 200px !important;
+    /* width: 200px !important; */
 }
 
 .table-heading {
@@ -156,4 +203,23 @@
 
 .title-underline {
     width: 120px;
+}
+
+.divider-custom {
+    background-color: white;
+    opacity: 1;
+}
+
+.divider-container {
+    width: 10px;
+}
+
+.info-tag {
+    position: fixed;
+    right: 0;
+    top: 20%;
+    background-color: #971717;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
 }
