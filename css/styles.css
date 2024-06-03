@@ -70,7 +70,7 @@
 
 .logo {
     max-width: 6vmax !important;
-    min-width: 18vmax;
+    min-width: 16vmax;
 }
 
 .w-1 {
@@ -354,4 +354,8 @@
         height: 140px !important;
         object-fit: cover !important;
     }
+}
+
+.icon-text-align {
+    vertical-align: bottom;
 }
