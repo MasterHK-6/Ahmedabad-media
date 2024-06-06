@@ -5,6 +5,16 @@
     font-style: normal;
 }
 
+
+.anek-gujarati- {
+    font-family: "Anek Gujarati", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 .header-info-container {
     display: none !important;
 }
@@ -55,8 +65,11 @@
 }
 
 .news-heading {
-    font-weight: 700 !important;
-    color: black;
+    font-family: "Anek Gujarati", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #B71C1C;
 }
 
 .header-container {
@@ -87,6 +100,10 @@
 .heading-container {
     background-color: #777777;
     color: #ffffff;
+    font-family: "Anek Gujarati", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .latest-heading-container {
@@ -106,6 +123,11 @@
 
 .link-see-more {
     text-decoration: underline dotted #B71C1C;
+    color: #B71C1C;
+    font-family: "Anek Gujarati", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .news-subtitle {
