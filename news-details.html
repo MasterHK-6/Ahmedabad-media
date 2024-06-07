@@ -494,6 +494,46 @@
                 </div>
             </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Share</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex justify-content-around align-items-center">
+                                <a class="nav-link text-theme-gray" href="#">
+                                    <div class="d-flex flex-column gap-2 align-items-center">
+                                        <img src=" ./assets/instagram-share.png" alt="instagram">
+                                        <div class="fw-bold">INSTAGRAM</div>
+                                    </div>
+                                </a>
+                                <a class="nav-link text-theme-gray" href="#">
+                                    <div class="d-flex flex-column gap-2 align-items-center">
+                                        <img src="./assets/facebook-share.png" alt="facebook">
+                                        <span class="fw-bold">FACEBOOK</span>
+                                    </div>
+                                </a>
+                                <a class="nav-link text-theme-gray" href="#">
+                                    <div class="d-flex flex-column gap-2 align-items-center">
+                                        <img src="./assets/whatsapp-share.png" alt="whatsapp">
+                                        <span class="fw-bold">WHATSAPP</span>
+                                    </div>
+                                </a>
+                                <a class="nav-link text-theme-gray" href="#">
+                                    <div class="d-flex flex-column gap-2 align-items-center">
+                                        <img src="./assets/twitter-share.png" alt="twitter">
+                                        <span class="fw-bold">TWITTER</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <!-- side nav -->
                 <div class="col-md-4 col-lg-3 col-xl-2 side-nav-container">
@@ -711,7 +751,8 @@
                                         </svg>
                                         20 DISLIKE
                                     </div>
-                                    <div class="d-flex text-center flex-column align-items-center m-3">
+                                    <div class="d-flex text-center flex-column align-items-center m-3 cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#shareModal">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                             fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
                                             <path

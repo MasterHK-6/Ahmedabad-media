@@ -381,3 +381,7 @@
 .icon-text-align {
     vertical-align: bottom;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
