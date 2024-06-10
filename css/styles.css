@@ -427,6 +427,10 @@
         height: 140px !important;
         object-fit: cover !important;
     }
+
+    .custom-text-size {
+        font-size: 1rem !important;
+    }
 }
 
 .icon-text-align {
@@ -435,4 +439,14 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.vanilla-calendar-column {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.custom-text-size {
+    font-size: 1.15em;
 }
