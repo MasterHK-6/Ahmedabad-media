@@ -420,6 +420,12 @@
     display: flex !important;
 }
 
+.start-texts {
+    font-family: "Anek Gujarati", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .search-bar {
     display: block;
 }
