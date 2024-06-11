@@ -416,6 +416,10 @@
     display: none;
 }
 
+.start-text-container {
+    display: flex !important;
+}
+
 .search-bar {
     display: block;
 }
@@ -423,6 +427,10 @@
 @media only screen and (max-width: 576px) {
     .btn-nav {
         display: flex !important;
+    }
+
+    .start-text-container {
+        display: none !important;
     }
 
     .search-bar {
