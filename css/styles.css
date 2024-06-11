@@ -8,12 +8,25 @@
 .focus-ring {
     --bs-focus-ring-color: #B71C1C;
     --bs-focus-ring-opacity: .10;
-    --bs-focus-ring-width: 1px;
+    --bs-focus-ring-width: 0;
 }
 
 .form-control:focus {
-    border-color: #B71C1C;
+    border-color: gainsboro;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    transition: 0.3s;
 }
+
+#input-search-container {
+    transition: 0.3s;
+}
+
+/* .prefix-icon-border {
+    border-color: #B71C1C;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+} */
 
 .anek-gujarati- {
     font-family: "Anek Gujarati", sans-serif;

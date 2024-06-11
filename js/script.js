@@ -22,3 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     calendar.init();
 });
+
+document.getElementById('input-search').addEventListener('focusin', (e) => {
+    let prefixSpan = document.getElementById('input-search-container');
+    prefixSpan.classList.add('shadow');
+    // let input = document.getElementById('input-search');
+    // input.classList.add('prefix-icon-border');
+})
+
+document.getElementById('input-search').addEventListener('focusout', (e) => {
+    let prefixSpan = document.getElementById('input-search-container');
+    prefixSpan.classList.remove('shadow');
+})

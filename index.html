@@ -188,12 +188,27 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="col col-sm-3 col-md-7 col-xl-6">
+                    <div class="col col-sm-3 col-md-7 col-xl-5">
+                        <h5 class="fw-bold">Explore Top</br> News, Jobs, Events </br>In Ahmedabad</h5>
+                    </div>
+                    <div class="col col-sm-3 col-md-7 col-xl-3">
                         <img src="./assets/ahmedabad-media-logo128px.png" alt="logo" class="logo">
                     </div>
-                    <div class="col-12 col-sm-6 col-md-5 col-xl-3 search-bar">
-                        <input class="form-control focus-ring" type="text" placeholder="Search here..."
-                            aria-label="search">
+                    <div class="col-12 col-sm-6 col-md-5 col-xl-4 search-bar">
+                        <div id="input-search-container" class="input-group rounded-pill">
+                            <span id="prefix-span"
+                                class="input-group-text rounded-start-pill bg-light-subtle border-end-0 pe-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#B71C1C"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </span>
+                            <input id="input-search" type="text"
+                                class="focus-ring form-control bg-light-subtle rounded-end-pill border-start-0"
+                                placeholder="Search Stock, Quotes, News, Mutual Funds and more" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1185,6 +1200,7 @@
             });
         });
     </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
