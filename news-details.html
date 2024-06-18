@@ -1,1195 +1,1477 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@800&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid pb-5">
-        <!-- menu -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                    <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+      <!-- menu -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+          >
+            <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+          </svg>
+          <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">
+            Explore
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="mt-3 col-12 col-sm-12 col-xl-3 col-lg-12">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
                 </svg>
-                <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Explore</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search here..."
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
             </div>
-            <div class="offcanvas-body">
-                <div class="mt-3 col-12 col-sm-12 col-xl-3 col-lg-12">
-                    <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Search here..." aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="col-xl-2">
-                    <ul class="nav side-nav d-flex flex-column my-4 gap-2">
-                        <li class="nav-item active">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./index.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
-                                </svg>
-                                <span class="fw-bold">HOME</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./calendars.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
-                                    <path d="M16 3v4" />
-                                    <path d="M8 3v4" />
-                                    <path d="M4 11h16" />
-                                    <path d="M7 14h.013" />
-                                    <path d="M10.01 14h.005" />
-                                    <path d="M13.01 14h.005" />
-                                    <path d="M16.015 14h.005" />
-                                    <path d="M13.015 17h.005" />
-                                    <path d="M7.01 17h.005" />
-                                    <path d="M10.01 17h.005" />
-                                </svg>
-                                <span class="fw-bold">NEWS CALENDAR</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./job-list.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M22 13.478v4.522a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-4.522l.553 .277a20.999 20.999 0 0 0 18.897 -.002l.55 -.275zm-8 -11.478a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v2.242l-1.447 .724a19.002 19.002 0 0 1 -16.726 .186l-.647 -.32l-1.18 -.59v-2.242a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3h4zm-2 8a1 1 0 0 0 -1 1a1 1 0 1 0 2 .01c0 -.562 -.448 -1.01 -1 -1.01zm2 -6h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1z" />
-                                </svg>
-                                <span class="fw-bold">JOBS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2"
-                                href="./event-list.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor"
-                                    class="bi bi-megaphone-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06" />
-                                </svg>
-                                <span class="fw-bold">EVENTS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24   " height="20" fill="currentColor"
-                                    class="bi bi-people-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                                </svg>
-                                <span class="fw-bold">ABOUT US</span>
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/instagram-color.png" alt="instagram">
-                                <span class="fw-bold">INSTAGRAM</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/youtube-color.png" alt="youtube">
-                                <span class="fw-bold">YOUTUBE</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/facebook.png" alt="facebook">
-                                <span class="fw-bold">FACEBOOK</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/twitter.png" alt="twitter">
-                                <span class="fw-bold">TWITTER</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="col-xl-2">
+            <ul class="nav side-nav d-flex flex-column my-4 gap-2">
+              <li class="nav-item active">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./index.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-home"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z"
+                    />
+                  </svg>
+                  <span class="fw-bold">HOME</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./calendars.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"
+                    />
+                    <path d="M16 3v4" />
+                    <path d="M8 3v4" />
+                    <path d="M4 11h16" />
+                    <path d="M7 14h.013" />
+                    <path d="M10.01 14h.005" />
+                    <path d="M13.01 14h.005" />
+                    <path d="M16.015 14h.005" />
+                    <path d="M13.015 17h.005" />
+                    <path d="M7.01 17h.005" />
+                    <path d="M10.01 17h.005" />
+                  </svg>
+                  <span class="fw-bold">NEWS CALENDAR</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./job-list.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M22 13.478v4.522a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-4.522l.553 .277a20.999 20.999 0 0 0 18.897 -.002l.55 -.275zm-8 -11.478a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v2.242l-1.447 .724a19.002 19.002 0 0 1 -16.726 .186l-.647 -.32l-1.18 -.59v-2.242a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3h4zm-2 8a1 1 0 0 0 -1 1a1 1 0 1 0 2 .01c0 -.562 -.448 -1.01 -1 -1.01zm2 -6h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1z"
+                    />
+                  </svg>
+                  <span class="fw-bold">JOBS</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./event-list.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-megaphone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06"
+                    />
+                  </svg>
+                  <span class="fw-bold">EVENTS</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-headset"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+                    />
+                  </svg>
+                  <span class="fw-bold">CONTACT US</span>
+                </a>
+              </li>
+              <hr />
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/instagram-color.png" alt="instagram" />
+                  <span class="fw-bold">INSTAGRAM</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/youtube-color.png" alt="youtube" />
+                  <span class="fw-bold">YOUTUBE</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/facebook.png" alt="facebook" />
+                  <span class="fw-bold">FACEBOOK</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/twitter.png" alt="twitter" />
+                  <span class="fw-bold">TWITTER</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- header -->
+      <header>
+        <div class="d-flex justify-content-between align-items-center my-3">
+          <div class="btn-nav">
+            <button
+              class="btn p-0"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+              >
+                <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/">
+              <img
+                src="./assets/ahmedabad-media-logo-round128px.png"
+                alt="logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <div class="search-bar">
+            <div id="input-search-container" class="input-group rounded-pill">
+              <span
+                id="prefix-span"
+                class="input-group-text rounded-start-pill bg-light-subtle border-end-0 pe-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#B71C1C"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </span>
+              <input
+                id="input-search"
+                type="text"
+                placeholder="Search news..."
+                class="focus-ring form-control bg-light-subtle rounded-end-pill border-start-0"
+                aria-label="search"
+                aria-describedby="basic-addon1"
+              />
             </div>
+          </div>
         </div>
 
-        <!-- header -->
-        <header>
-            <div class="header-info-container p-2 d-flex justify-content-between align-items-center">
-                <div>
-                    <small>CONNECT WITH US ON :</small>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_366_116)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
-                                fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_366_116">
-                                <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <svg width="24" height="24" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 0.574219C5.37321 0.574219 0 6.20455 0 13.1484C0 20.0923 5.37321 25.7227 12 25.7227C18.6268 25.7227 24 20.0923 24 13.1484C24 6.20455 18.6268 0.574219 12 0.574219ZM17.767 10.0526C17.775 10.1845 17.775 10.322 17.775 10.4568C17.775 14.5771 14.7804 19.3233 9.30804 19.3233C7.62054 19.3233 6.05625 18.8096 4.73839 17.9255C4.97946 17.9536 5.20982 17.9648 5.45625 17.9648C6.84911 17.9648 8.12946 17.4708 9.15 16.6344C7.84286 16.6063 6.74464 15.7082 6.36964 14.4732C6.82768 14.5434 7.24018 14.5434 7.71161 14.4171C7.03855 14.2738 6.43359 13.8908 5.99951 13.3331C5.56542 12.7754 5.32898 12.0774 5.33036 11.3577V11.3184C5.72411 11.5514 6.1875 11.6945 6.67232 11.7142C6.26476 11.4296 5.93051 11.044 5.69923 10.5916C5.46794 10.1392 5.34676 9.63398 5.34643 9.12076C5.34643 8.53976 5.49107 8.00929 5.75089 7.54898C6.49795 8.51264 7.43017 9.30079 8.48696 9.8622C9.54375 10.4236 10.7014 10.7457 11.8848 10.8076C11.4643 8.68852 12.975 6.9736 14.7911 6.9736C15.6482 6.9736 16.4196 7.3497 16.9634 7.95596C17.6357 7.82404 18.2786 7.56021 18.8518 7.20656C18.6295 7.92789 18.1634 8.53695 17.5446 8.92148C18.1446 8.85412 18.7232 8.6801 19.2589 8.43591C18.8545 9.05901 18.3482 9.61194 17.767 10.0526Z"
-                            fill="white" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
-                        style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
-                        <path
-                            d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
-                        </path>
-                        <circle cx="11.994" cy="11.979" r="3.003"></circle>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-youtube" viewBox="0 0 16 16">
-                        <path
-                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-                    </svg>
-                </div>
-                <p class="m-0">
-                    Ahmedabad 32&deg;C
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-cloud-sun-fill" viewBox="0 0 16 16">
-                        <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z" />
-                        <path
-                            d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
-                    </svg>
-                </p>
-            </div>
-
-            <div class="p-2 my-2 header-container">
-                <div class="row justify-content-between align-items-center m-0">
-                    <div class="btn-nav col col-sm-3">
-                        <button class="btn p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                            aria-controls="offcanvasExample">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                                <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="col col-sm-3 col-md-7 col-xl-6">
-                        <img src="./assets/ahmedabad-media-logo128px.png" alt="logo" class="logo">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-5 col-xl-3 search-bar">
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                </svg>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Search here..." aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-3 info-container">
-                <div class="col col-sm-12 col-xl">
-                    <div class="row">
-                        <div class="col">
-                            <div
-                                class="info-card-container rounded-1 p-3 d-flex justify-content-evenly align-items-center shadow">
-                                <div class="text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-                                    </svg>
-                                    <p class="m-0">25 Jan, 2024</p>
-                                </div>
-                                <div class="vr divider-custom"></div>
-                                <div class="text-center">
-                                    <p class="m-0">ચૈત્ર વદ પાંચમ</p>
-                                    <p class="m-0">વિ. સ. 2080</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1 col-lg-1 divider-container">
-                            <div class="divider"></div>
-                        </div>
-                        <div class="col">
-                            <div
-                                class="info-card-container rounded-1 d-flex justify-content-evenly align-items-center p-3 shadow">
-                                <div class="w-50 px-3">
-                                    <div class="text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-zodiac-virgo">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M3 4a2 2 0 0 1 2 2v9" />
-                                            <path d="M5 6a2 2 0 0 1 4 0v9" />
-                                            <path d="M9 6a2 2 0 0 1 4 0v10a7 5 0 0 0 7 5" />
-                                            <path d="M12 21a7 5 0 0 0 7 -5v-2a3 3 0 0 0 -6 0" />
-                                        </svg>
-                                        <span class="m-0">રાશિ : તુલા</span>
-                                    </div>
-                                    <div class="text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-temperature-sun">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M4 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 1 0 -4 0v8.5" />
-                                            <path d="M4 9h4" />
-                                            <path d="M13 16a4 4 0 1 0 0 -8a4.07 4.07 0 0 0 -1 .124" />
-                                            <path d="M13 3v1" />
-                                            <path d="M21 12h1" />
-                                            <path d="M13 20v1" />
-                                            <path d="M19.4 5.6l-.7 .7" />
-                                            <path d="M18.7 17.7l.7 .7" />
-                                        </svg>
-                                        <span class="m-0">વસંત ઋતુ</span>
-                                    </div>
-                                </div>
-                                <div class="vr divider-custom"></div>
-                                <div class="text-center w-50 px-3">
-                                    <marquee behavior="scroll" direction="left" class="mt-2" scrollamount="3">
-                                        <p class="m-0">ગુરુ ગોવિંદ સિંહનો જન્મ દિન</p>
-                                    </marquee>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 divider-container divider-container-middle mx-2">
-                    <div class="divider"></div>
-                </div>
-                <div class="col col-sm-12 col-xl">
-                    <div class="row">
-                        <div class="col">
-                            <div
-                                class="info-card-container rounded-1 p-3 d-flex justify-content-around align-items-center shadow">
-                                <div class="text-center w-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M3 21l18 0" />
-                                        <path d="M3 10l18 0" />
-                                        <path d="M5 6l7 -3l7 3" />
-                                        <path d="M4 10l0 11" />
-                                        <path d="M20 10l0 11" />
-                                        <path d="M8 14l0 3" />
-                                        <path d="M12 14l0 3" />
-                                        <path d="M16 14l0 3" />
-                                    </svg>
-                                    <p class="m-0">બેંક : ચાલુ છે.</p>
-                                </div>
-                                <div class="vr divider-custom"></div>
-                                <div class="text-center w-50 px-3">
-                                    <marquee behavior="scroll" direction="left" class="mt-2" scrollamount="3">
-                                        <p class="m-0">પ્રજસત્તાક દિન</p>
-                                    </marquee>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1 col-lg-1 divider-container">
-                            <div class="divider"></div>
-                        </div>
-                        <div class="col">
-                            <div
-                                class="info-card-container rounded-1 p-3 d-flex justify-content-around align-items-center shadow">
-                                <div class="text-center w-50 px-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-sunrise">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
-                                        <path d="M3 21l18 0" />
-                                        <path d="M12 9v-6l3 3m-6 0l3 -3" />
-                                    </svg>
-                                    <span class="m-0">સૂર્યોદય</span>
-                                    <div class="m-0">06 : 04 am</div>
-                                </div>
-                                <div class="vr divider-custom"></div>
-                                <div class="text-center w-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-sunset">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
-                                        <path d="M3 21l18 0" />
-                                        <path d="M12 3v6l3 -3m-6 0l3 3" />
-                                    </svg>
-                                    <span class="m-0">સૂર્યાસ્ત</span>
-                                    <div class="m-0">06 : 04 am</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- content -->
-        <main>
-            <!--Small Drawer-->
-            <div id="smallDrawer">
-                <div class="text-start">
-                    <div id="drawerToggle" class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-                            <path d="M12 9h.01" />
-                            <path d="M11 12h1v4h1" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="row g-2 small-info-container">
-                    <div class="col-12">
-                        <div
-                            class="info-card-container rounded-1 p-1 d-flex justify-content-around align-items-center shadow">
-                            <div class="text-center w-50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                    class="bi bi-calendar" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-                                </svg>
-                                <p class="m-0 small-screen-font">25 Jan, 2024</p>
-                            </div>
-                            <div class="vr divider-custom"></div>
-                            <div class="text-center w-50 px-3">
-                                <p class="m-0 small-screen-font">ચૈત્ર વદ પાંચમ વિ. સ. 2080</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div
-                            class="info-card-container rounded-1 d-flex justify-content-evenly align-items-center p-1 shadow">
-                            <div class="text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-zodiac-virgo">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M3 4a2 2 0 0 1 2 2v9" />
-                                    <path d="M5 6a2 2 0 0 1 4 0v9" />
-                                    <path d="M9 6a2 2 0 0 1 4 0v10a7 5 0 0 0 7 5" />
-                                    <path d="M12 21a7 5 0 0 0 7 -5v-2a3 3 0 0 0 -6 0" />
-                                </svg>
-                                <p class="m-0 small-screen-font">રાશિ : તુલા</p>
-                            </div>
-                            <div class="vr divider-custom"></div>
-
-                            <div class="text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-temperature-sun">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M4 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 1 0 -4 0v8.5" />
-                                    <path d="M4 9h4" />
-                                    <path d="M13 16a4 4 0 1 0 0 -8a4.07 4.07 0 0 0 -1 .124" />
-                                    <path d="M13 3v1" />
-                                    <path d="M21 12h1" />
-                                    <path d="M13 20v1" />
-                                    <path d="M19.4 5.6l-.7 .7" />
-                                    <path d="M18.7 17.7l.7 .7" />
-                                </svg>
-                                <p class="m-0 small-screen-font">વસંત ઋતુ</p>
-                            </div>
-                            <div class="vr divider-custom"></div>
-                            <div class="text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M3 21l18 0" />
-                                    <path d="M3 10l18 0" />
-                                    <path d="M5 6l7 -3l7 3" />
-                                    <path d="M4 10l0 11" />
-                                    <path d="M20 10l0 11" />
-                                    <path d="M8 14l0 3" />
-                                    <path d="M12 14l0 3" />
-                                    <path d="M16 14l0 3" />
-                                </svg>
-                                <p class="m-0 small-screen-font">બેંક : ચાલુ છે.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div
-                            class="info-card-container info-card-container-day rounded-1 p-1 d-flex justify-content-around align-items-center shadow">
-                            <div class="text-center px-3 w-50">
-                                <marquee behavior="scroll" direction="left" class="mt-2" scrollamount="3">
-                                    <p class="m-0 small-screen-font">ગુરુ ગોવિંદ સિંહનો જન્મ દિન</p>
-                                </marquee>
-                            </div>
-                            <div class="vr divider-custom"></div>
-                            <div class="text-center w-50 px-3">
-                                <marquee behavior="scroll" direction="left" class="mt-2" scrollamount="3">
-                                    <p class="m-0 small-screen-font">પ્રજસત્તાક દિન</p>
-                                </marquee>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div
-                            class="info-card-container rounded-1 p-2 d-flex justify-content-around align-items-center shadow">
-                            <div class="w-50 px-3">
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-sunrise">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
-                                        <path d="M3 21l18 0" />
-                                        <path d="M12 9v-6l3 3m-6 0l3 -3" />
-                                    </svg>
-                                    <span class="m-0 small-screen-font">સૂર્યોદય</span>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center gap-2">
-                                    <span class="m-0 small-screen-font">06 : 04 am</span>
-                                </div>
-                            </div>
-                            <div class="vr divider-custom"></div>
-                            <div class="w-50 px-3">
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-sunset">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
-                                        <path d="M3 21l18 0" />
-                                        <path d="M12 3v6l3 -3m-6 0l3 3" />
-                                    </svg>
-                                    <span class="m-0 small-screen-font">સૂર્યાસ્ત</span>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center gap-2">
-                                    <span class="m-0 small-screen-font">06 : 04 am</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Small Market Drawer-->
-            <div id="smallMarketDrawer">
-                <div class="text-start">
-                    <div id="drawerMarketToggle" class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-coin-rupee">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                            <path d="M15 8h-6h1a3 3 0 0 1 0 6h-1l3 3" />
-                            <path d="M9 11h6" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="small-price-container">
-                    <table class="table table-hover table-sm align-middle m-0">
-                        <thead>
-                            <tr>
-                                <th colspan="3" class="table-heading">
-                                    <h4 class="m-0 small-screen-heading-font">બજાર</h4>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
-                                <td class="text-secondary text-center small-screen-font">$22.99</td>
-                                <td class="text-end">
-                                    <div class="d-flex flex-column">
-                                        <p class="text-price-up-down m-0 lh-1 small-screen-font">$254.99</p>
-                                        <small class="text-price-up-down m-0 lh-1 small-screen-font">+0.10%</small>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="3" class="table-heading">
-                                    <h4 class="m-0 small-screen-heading-font">FUEL</h4>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold small-screen-font">પેટ્રોલ</td>
-                                <td></td>
-                                <td class="text-secondary text-end small-screen-font">$ 22.99</td>
-                            </tr>
-                            <tr>
-                                <td class=" fw-bold small-screen-font">ડીઝલ</td>
-                                <td></td>
-                                <td class="text-secondary text-end small-screen-font">$ 22.99</td>
-                            </tr>
-                            <tr>
-                                <td class=" fw-bold small-screen-font">CNG</td>
-                                <td></td>
-                                <td class="text-secondary text-end small-screen-font">$ 22.99</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!--Share Modal -->
-            <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Share</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="d-flex justify-content-around align-items-center">
-                                <a class="nav-link text-theme-gray" href="#">
-                                    <div class="d-flex flex-column gap-2 align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                                        </svg>
-                                        <div class="fw-bold">INSTAGRAM</div>
-                                    </div>
-                                </a>
-                                <a class="nav-link text-theme-gray" href="#">
-                                    <div class="d-flex flex-column gap-2 align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                                        </svg>
-                                        <span class="fw-bold">FACEBOOK</span>
-                                    </div>
-                                </a>
-                                <a class="nav-link text-theme-gray" href="#">
-                                    <div class="d-flex flex-column gap-2 align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                                        </svg>
-                                        <span class="fw-bold">WHATSAPP</span>
-                                    </div>
-                                </a>
-                                <a class="nav-link text-theme-gray" href="#">
-                                    <div class="d-flex flex-column gap-2 align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                            <path
-                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                                        </svg>
-                                        <span class="fw-bold">TWITTER</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <!-- Info -->
+        <div class="row g-3 info-container">
+          <div class="col col-sm-12 col-xl">
             <div class="row">
-                <!-- side nav -->
-                <div class="col-md-4 col-lg-3 col-xl-2 side-nav-container">
-                    <ul class="nav side-nav d-flex flex-column my-4 gap-2">
-                        <li class="nav-item active">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./index.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
-                                </svg>
-                                <span class="fw-bold">HOME</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./calendars.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
-                                    <path d="M16 3v4" />
-                                    <path d="M8 3v4" />
-                                    <path d="M4 11h16" />
-                                    <path d="M7 14h.013" />
-                                    <path d="M10.01 14h.005" />
-                                    <path d="M13.01 14h.005" />
-                                    <path d="M16.015 14h.005" />
-                                    <path d="M13.015 17h.005" />
-                                    <path d="M7.01 17h.005" />
-                                    <path d="M10.01 17h.005" />
-                                </svg>
-                                <span class="fw-bold">NEWS CALENDAR</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="./job-list.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M22 13.478v4.522a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-4.522l.553 .277a20.999 20.999 0 0 0 18.897 -.002l.55 -.275zm-8 -11.478a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v2.242l-1.447 .724a19.002 19.002 0 0 1 -16.726 .186l-.647 -.32l-1.18 -.59v-2.242a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3h4zm-2 8a1 1 0 0 0 -1 1a1 1 0 1 0 2 .01c0 -.562 -.448 -1.01 -1 -1.01zm2 -6h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1z" />
-                                </svg>
-                                <span class="fw-bold">JOBS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2"
-                                href="./event-list.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor"
-                                    class="bi bi-megaphone-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06" />
-                                </svg>
-                                <span class="fw-bold">EVENTS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24   " height="20" fill="currentColor"
-                                    class="bi bi-people-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                                </svg>
-                                <span class="fw-bold">ABOUT US</span>
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/instagram-color.png" alt="instagram">
-                                <span class="fw-bold">INSTAGRAM</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/youtube-color.png" alt="youtube">
-                                <span class="fw-bold">YOUTUBE</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/facebook.png" alt="facebook">
-                                <span class="fw-bold">FACEBOOK</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-theme-gray d-flex align-items-center gap-2" href="#">
-                                <img src="./assets/twitter.png" alt="twitter">
-                                <span class="fw-bold">TWITTER</span>
-                            </a>
-                        </li>
-                    </ul>
+              <div class="col">
+                <div
+                  class="info-card-container rounded-1 p-3 d-flex justify-content-evenly align-items-center shadow"
+                >
+                  <div class="text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                      />
+                    </svg>
+                    <p class="m-0">25 Jan, 2024</p>
+                  </div>
+                  <div class="vr divider-custom"></div>
+                  <div class="text-center">
+                    <p class="m-0">ચૈત્ર વદ પાંચમ</p>
+                    <p class="m-0">વિ. સ. 2080</p>
+                  </div>
                 </div>
-
-                <div class="col-md-8 col-lg-9 col-xl-10">
-                    <article class="mt-4 border shadow rounded-1 py-1">
-                        <div class="d-flex justify-content-between align-items-end flex-column flex-xl-row mb-2">
-                            <h4 class="news-heading mx-4 my-2">AMC Alert: હવામાન વિભાગ બાદ AMC એ જાહેર કર્યું એલર્ટ, બે
-                                દિવસ ઓરેન્જ અને ત્રણ દિવસ યલો એલર્ટ ઓરેન્જ અને ત્રણ દિવસ યલો એલર્ટ ઓરેન્જ અને ત્રણ દિવસ
-                                યલો એલર્ટ
-                                <br>
-                                <small><span class="badge text-bg-secondary">Updated</span></small>
-                            </h4>
-                            <p class="news-time-stamp fw-bold text-secondary mb-0 mx-4 text-end">Published on Aug
-                                08, 2022
-                                04:42
-                                PM
-                            </p>
-                        </div>
-                        <figure class=" mb-1">
-                            <img src="./assets/PM-VP.png" alt="news-img" width="100%">
-                        </figure>
-                        <p class="text-theme-red fw-bold text-end me-3">Published BY SHUBHAM VAGHELA</p>
-                        <div class="px-4">
-                            <p class="custom-text-size">
-                                17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી 44 નોંધાવાની શક્યતા
-                                છે.
-                                અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી
-                                નોર્મલ
-                                રહેશે.
-                            </p>
-                            <p class="custom-text-size">
-                                17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી 44 નોંધાવાની શક્યતા
-                                છે.
-                                અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી
-                                નોર્મલ
-                                રહેશે.
-                            </p>
-                            <p class="custom-text-size">
-                                17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી 44 નોંધાવાની શક્યતા
-                                છે.
-                                અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી
-                                નોર્મલ
-                                રહેશે.
-                            </p>
-                            <p class="custom-text-size">
-                                હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation issued alert) જાહેર
-                                કર્યું
-                                છે.
-                                આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ (orange alert) અને બાદના ત્રણ દિવસ માટે યલો એલર્ટ
-                                જાહેર
-                                (yello
-                                alert) કરવામાં આવ્યું છે. શનિવાર અને રવિવારે 44 ડિગ્રી (heat wave) રહેવાનું અનુમાન
-                                છે,
-                                જ્યારે
-                                સોમવાર,મંગળવાર અને બુધવારના રોજ તાપમાન 43 ડિગ્રી રહેવાનું અનુમાન છે.
-                            </p>
-                            <p class="custom-text-size">
-                                હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation issued alert) જાહેર
-                                કર્યું
-                                છે.
-                                આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ (orange alert) અને બાદના ત્રણ દિવસ માટે યલો એલર્ટ
-                                જાહેર
-                                (yello
-                                alert) કરવામાં આવ્યું છે. શનિવાર અને રવિવારે 44 ડિગ્રી (heat wave) રહેવાનું અનુમાન
-                                છે,
-                                જ્યારે
-                                સોમવાર,મંગળવાર અને બુધવારના રોજ તાપમાન 43 ડિગ્રી રહેવાનું અનુમાન છે.
-                            </p>
-                            <p class="custom-text-size">
-                                17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી 44 નોંધાવાની શક્યતા
-                                છે.
-                                અમુક
-                                જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ
-                                રહેશે.
-                                હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation issued alert) જાહેર
-                                કર્યું
-                                છે.
-                            </p>
-                            <p class="custom-text-size">
-                                આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ (orange alert) અને બાદના ત્રણ દિવસ માટે યલો એલર્ટ
-                                જાહેર
-                                (yello
-                                alert) કરવામાં આવ્યું છે. શનિવાર અને રવિવારે 44 ડિગ્રી (heat wave) રહેવાનું અનુમાન
-                                છે,
-                                જ્યારે
-                                સોમવાર,મંગળવાર અને બુધવારના રોજ તાપમાન 43 ડિગ્રી રહેવાનું અનુમાન છે.
-                            </p>
-                            <p class="custom-text-size">
-                                17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી 44 નોંધાવાની શક્યતા
-                                છે.
-                                અમુક
-                                જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ
-                                રહેશે.
-                            </p>
-                        </div>
-                        <div class="px-4">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div
-                                        class="d-flex text-center flex-column justify-content-center align-items-center m-3 cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
-                                            viewBox="0 0 24 28" fill="none" stroke="#B71C1C" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-thumb-up">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3" />
-                                        </svg>
-                                        10K.6 LIKE
-                                    </div>
-                                    <div
-                                        class="d-flex text-center flex-column justify-content-center align-items-center m-3 cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                            viewBox="0 0 24 28" fill="none" stroke="#B71C1C" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-thumb-down">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M7 13v-8a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v7a1 1 0 0 0 1 1h3a4 4 0 0 1 4 4v1a2 2 0 0 0 4 0v-5h3a2 2 0 0 0 2 -2l-1 -5a2 3 0 0 0 -2 -2h-7a3 3 0 0 0 -3 3" />
-                                        </svg>
-                                        20 DISLIKE
-                                    </div>
-                                    <div class="d-flex text-center flex-column align-items-center m-3 cursor-pointer"
-                                        data-bs-toggle="modal" data-bs-target="#shareModal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#B71C1C"
-                                            class="bi bi-share-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
-                                        </svg>
-                                        <span class="mt-sm-2 my-3 my-sm-0">SHARE</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex text-center flex-column align-items-center m-3 cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#B71C1C"
-                                            class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                            <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                        </svg>
-                                        <span class="mt-2">10K.6 VIEWS</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- <div class="d-flex flex-column gap-4 border mx-0 my-3 p-4 shadow rounded-1">
-                        <div class="d-flex flex-wrap flex-lg-nowrap gap-2">
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="./assets/avatar.png" alt="news" width="34px" class="m-0 p-0">
-                                </div>
-                                <div>
-                                    <div class="d-flex gap-2">
-                                        <h6 class="news-heading">Naira Patel</h6>
-                                        <small class="m-0 text-secondary">1h ago</small>
-                                    </div>
-                                    <p class="m-0">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો સ્ત્રોત પણ
-                                        જણાવવો
-                                        પડશે
-                                        પહેલીવાર
-                                        મેટ્રોમાં દૈનિક મુસાફરી કરતાં લોકોની સંખ્યા 1 લાખને પાર. મદરેસામાં બિનમુસ્લિમ
-                                        બાળકોનો
-                                        સરવે
-                                        થશે,
-                                        શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                    </p>
-                                </div>
-                            </div>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="d-flex flex-wrap flex-lg-nowrap gap-2">
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="./assets/avatar.png" alt="news" width="34px" class="m-0 p-0">
-                                </div>
-                                <div>
-                                    <div class="d-flex gap-2">
-                                        <h6 class="news-heading">Naira Patel</h6>
-                                        <small class="m-0 text-secondary">1h ago</small>
-                                    </div>
-                                    <p class="m-0">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો સ્ત્રોત પણ
-                                        જણાવવો
-                                        પડશે
-                                        પહેલીવાર
-                                        મેટ્રોમાં દૈનિક મુસાફરી કરતાં લોકોની સંખ્યા 1 લાખને પાર. મદરેસામાં બિનમુસ્લિમ
-                                        બાળકોનો
-                                        સરવે
-                                        થશે,
-                                        શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                    </p>
-                                </div>
-                            </div>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="d-flex flex-wrap flex-lg-nowrap gap-2">
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="./assets/avatar.png" alt="news" width="34px" class="m-0 p-0">
-                                </div>
-                                <div>
-                                    <div class="d-flex gap-2">
-                                        <h6 class="news-heading">Naira Patel</h6>
-                                        <small class="m-0 text-secondary">1h ago</small>
-                                    </div>
-                                    <p class="m-0">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો સ્ત્રોત પણ
-                                        જણાવવો
-                                        પડશે
-                                        પહેલીવાર
-                                        મેટ્રોમાં દૈનિક મુસાફરી કરતાં લોકોની સંખ્યા 1 લાખને પાર. મદરેસામાં બિનમુસ્લિમ
-                                        બાળકોનો
-                                        સરવે
-                                        થશે,
-                                        શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                    </p>
-                                </div>
-                            </div>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="d-flex flex-wrap flex-lg-nowrap gap-2">
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="./assets/avatar.png" alt="news" width="34px" class="m-0 p-0">
-                                </div>
-                                <div>
-                                    <div class="d-flex gap-2">
-                                        <h6 class="news-heading">Naira Patel</h6>
-                                        <small class="m-0 text-secondary">1h ago</small>
-                                    </div>
-                                    <p class="m-0">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો સ્ત્રોત પણ
-                                        જણાવવો
-                                        પડશે
-                                        પહેલીવાર
-                                        મેટ્રોમાં દૈનિક મુસાફરી કરતાં લોકોની સંખ્યા 1 લાખને પાર. મદરેસામાં બિનમુસ્લિમ
-                                        બાળકોનો
-                                        સરવે
-                                        થશે,
-                                        શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                    </p>
-                                </div>
-                            </div>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div> -->
-
-                    <h2 class="my-4 d-flex align-items-center fw-bold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#777777"
-                            class="bi bi-newspaper" viewBox="0 0 16 16">
-                            <path
-                                d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
-                            <path
-                                d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
-                        </svg>
-                        <span class="px-1 pt-1 heading-container d-flex align-items-center">
-                            MOST VIEWS SUGGESTION
-                        </span>
-                    </h2>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="./news-details.html" class="text-decoration-none">
-                                <div class="row border shadow rounded-1 m-0 p-0 ">
-                                    <img src="./assets/news.png" alt="news"
-                                        class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img">
-                                    <div class="ms-xl-2 mt-3 col">
-                                        <h5 class="news-heading">અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: </h5>
-                                        <p class="m-0 news-subtitle text-dark">મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે,
-                                            શિક્ષકોના પગારનો સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
-                                        </p>
-                                        <div class="text-end text-secondary">
-                                            <small>AUG 04, 2024 05:28 pm</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+              </div>
+              <div class="col-1 col-lg-1 divider-container">
+                <div class="divider"></div>
+              </div>
+              <div class="col">
+                <div
+                  class="info-card-container rounded-1 d-flex justify-content-evenly align-items-center p-3 shadow"
+                >
+                  <div class="w-50 px-3">
+                    <div class="text-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-zodiac-virgo"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 4a2 2 0 0 1 2 2v9" />
+                        <path d="M5 6a2 2 0 0 1 4 0v9" />
+                        <path d="M9 6a2 2 0 0 1 4 0v10a7 5 0 0 0 7 5" />
+                        <path d="M12 21a7 5 0 0 0 7 -5v-2a3 3 0 0 0 -6 0" />
+                      </svg>
+                      <span class="m-0">રાશિ : તુલા</span>
                     </div>
+                    <div class="text-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-temperature-sun"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M4 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 1 0 -4 0v8.5"
+                        />
+                        <path d="M4 9h4" />
+                        <path
+                          d="M13 16a4 4 0 1 0 0 -8a4.07 4.07 0 0 0 -1 .124"
+                        />
+                        <path d="M13 3v1" />
+                        <path d="M21 12h1" />
+                        <path d="M13 20v1" />
+                        <path d="M19.4 5.6l-.7 .7" />
+                        <path d="M18.7 17.7l.7 .7" />
+                      </svg>
+                      <span class="m-0">વસંત ઋતુ</span>
+                    </div>
+                  </div>
+                  <div class="vr divider-custom"></div>
+                  <div class="text-center w-50 px-3">
+                    <marquee
+                      behavior="scroll"
+                      direction="left"
+                      class="mt-2"
+                      scrollamount="3"
+                    >
+                      <p class="m-0">ગુરુ ગોવિંદ સિંહનો જન્મ દિન</p>
+                    </marquee>
+                  </div>
                 </div>
+              </div>
             </div>
-        </main>
+          </div>
+          <div class="col-1 divider-container divider-container-middle mx-2">
+            <div class="divider"></div>
+          </div>
+          <div class="col col-sm-12 col-xl">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="info-card-container rounded-1 p-3 d-flex justify-content-around align-items-center shadow"
+                >
+                  <div class="text-center w-50">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M3 21l18 0" />
+                      <path d="M3 10l18 0" />
+                      <path d="M5 6l7 -3l7 3" />
+                      <path d="M4 10l0 11" />
+                      <path d="M20 10l0 11" />
+                      <path d="M8 14l0 3" />
+                      <path d="M12 14l0 3" />
+                      <path d="M16 14l0 3" />
+                    </svg>
+                    <p class="m-0">બેંક : ચાલુ છે.</p>
+                  </div>
+                  <div class="vr divider-custom"></div>
+                  <div class="text-center w-50 px-3">
+                    <marquee
+                      behavior="scroll"
+                      direction="left"
+                      class="mt-2"
+                      scrollamount="3"
+                    >
+                      <p class="m-0">પ્રજસત્તાક દિન</p>
+                    </marquee>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 col-lg-1 divider-container">
+                <div class="divider"></div>
+              </div>
+              <div class="col">
+                <div
+                  class="info-card-container rounded-1 p-3 d-flex justify-content-around align-items-center shadow"
+                >
+                  <div class="text-center w-50 px-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-sunrise"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
+                      />
+                      <path d="M3 21l18 0" />
+                      <path d="M12 9v-6l3 3m-6 0l3 -3" />
+                    </svg>
+                    <span class="m-0">06 : 04 am</span>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-sunset"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
+                        />
+                        <path d="M3 21l18 0" />
+                        <path d="M12 3v6l3 -3m-6 0l3 3" />
+                      </svg>
+                      <span class="m-0">08 : 04 am</span>
+                    </div>
+                  </div>
+                  <div class="vr divider-custom"></div>
+                  <div class="text-center w-50">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-cloud-sun"
+                    >
+                      <path d="M12 2v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="M20 12h2" />
+                      <path d="m19.07 4.93-1.41 1.41" />
+                      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128" />
+                      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z" />
+                    </svg>
+                    <div class="m-0 lh-1">32&deg;C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- content -->
+      <main>
+        <!--Small Drawer-->
+        <div id="smallDrawer">
+          <div class="text-start">
+            <div id="drawerToggle" class="shadow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M12 9h.01" />
+                <path d="M11 12h1v4h1" />
+              </svg>
+            </div>
+          </div>
+          <div class="row g-2 small-info-container">
+            <div class="col-12">
+              <div
+                class="info-card-container rounded-1 p-1 d-flex justify-content-around align-items-center shadow"
+              >
+                <div
+                  class="w-50 my-2 d-flex align-items-center justify-content-center gap-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-calendar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                    />
+                  </svg>
+                  <p class="m-0 small-screen-font">25 Jan, 2024</p>
+                </div>
+                <div class="vr divider-custom"></div>
+                <div class="text-center w-50 my-2">
+                  <p class="m-0 small-screen-font">
+                    ચૈત્ર વદ પાંચમ વિ. સ. 2080
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                class="info-card-container rounded-1 d-flex justify-content-evenly align-items-center p-1 shadow"
+              >
+                <div class="text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-zodiac-virgo"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 4a2 2 0 0 1 2 2v9" />
+                    <path d="M5 6a2 2 0 0 1 4 0v9" />
+                    <path d="M9 6a2 2 0 0 1 4 0v10a7 5 0 0 0 7 5" />
+                    <path d="M12 21a7 5 0 0 0 7 -5v-2a3 3 0 0 0 -6 0" />
+                  </svg>
+                  <p class="m-0 small-screen-font">રાશિ : તુલા</p>
+                </div>
+                <div class="vr divider-custom"></div>
+
+                <div class="text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-temperature-sun"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 1 0 -4 0v8.5" />
+                    <path d="M4 9h4" />
+                    <path d="M13 16a4 4 0 1 0 0 -8a4.07 4.07 0 0 0 -1 .124" />
+                    <path d="M13 3v1" />
+                    <path d="M21 12h1" />
+                    <path d="M13 20v1" />
+                    <path d="M19.4 5.6l-.7 .7" />
+                    <path d="M18.7 17.7l.7 .7" />
+                  </svg>
+                  <p class="m-0 small-screen-font">વસંત ઋતુ</p>
+                </div>
+                <div class="vr divider-custom"></div>
+                <div class="text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l18 0" />
+                    <path d="M3 10l18 0" />
+                    <path d="M5 6l7 -3l7 3" />
+                    <path d="M4 10l0 11" />
+                    <path d="M20 10l0 11" />
+                    <path d="M8 14l0 3" />
+                    <path d="M12 14l0 3" />
+                    <path d="M16 14l0 3" />
+                  </svg>
+                  <p class="m-0 small-screen-font">બેંક : ચાલુ છે.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                class="info-card-container info-card-container-day rounded-1 p-1 d-flex justify-content-around align-items-center shadow"
+              >
+                <div class="text-center px-3 w-50">
+                  <marquee
+                    behavior="scroll"
+                    direction="left"
+                    class="mt-2"
+                    scrollamount="3"
+                  >
+                    <p class="m-0 small-screen-font">
+                      ગુરુ ગોવિંદ સિંહનો જન્મ દિન
+                    </p>
+                  </marquee>
+                </div>
+                <div class="vr divider-custom"></div>
+                <div class="text-center w-50 px-3">
+                  <marquee
+                    behavior="scroll"
+                    direction="left"
+                    class="mt-2"
+                    scrollamount="3"
+                  >
+                    <p class="m-0 small-screen-font">પ્રજસત્તાક દિન</p>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                class="info-card-container rounded-1 p-2 d-flex justify-content-evenly align-items-center shadow"
+              >
+                <div class="w-50 px-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-sunrise"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
+                      />
+                      <path d="M3 21l18 0" />
+                      <path d="M12 9v-6l3 3m-6 0l3 -3" />
+                    </svg>
+                    <span class="m-0 small-screen-font">06 : 04 am</span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-sunset"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
+                      />
+                      <path d="M3 21l18 0" />
+                      <path d="M12 3v6l3 -3m-6 0l3 3" />
+                    </svg>
+                    <span class="m-0 small-screen-font">06 : 04 am</span>
+                  </div>
+                </div>
+                <div class="vr divider-custom"></div>
+                <div class="w-50 px-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-cloud-sun"
+                    >
+                      <path d="M12 2v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="M20 12h2" />
+                      <path d="m19.07 4.93-1.41 1.41" />
+                      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128" />
+                      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z" />
+                    </svg>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-2"
+                  >
+                    <span class="m-0 small-screen-font">32&deg;C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Small Market Drawer-->
+        <div id="smallMarketDrawer">
+          <div class="text-start">
+            <div id="drawerMarketToggle" class="shadow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-coin-rupee"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M15 8h-6h1a3 3 0 0 1 0 6h-1l3 3" />
+                <path d="M9 11h6" />
+              </svg>
+            </div>
+          </div>
+          <div class="small-price-container">
+            <table class="table table-hover table-sm align-middle m-0">
+              <thead>
+                <tr>
+                  <th colspan="3" class="table-heading">
+                    <h4 class="m-0 small-screen-heading-font">બજાર</h4>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">સેન્સેક્ટ</td>
+                  <td class="text-secondary text-center small-screen-font">
+                    $22.99
+                  </td>
+                  <td class="text-end">
+                    <div class="d-flex flex-column">
+                      <p class="text-price-up-down m-0 lh-1 small-screen-font">
+                        $254.99
+                      </p>
+                      <small
+                        class="text-price-up-down m-0 lh-1 small-screen-font"
+                        >+0.10%</small
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="3" class="table-heading">
+                    <h4 class="m-0 small-screen-heading-font">FUEL</h4>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">પેટ્રોલ</td>
+                  <td></td>
+                  <td class="text-secondary text-end small-screen-font">
+                    $ 22.99
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">ડીઝલ</td>
+                  <td></td>
+                  <td class="text-secondary text-end small-screen-font">
+                    $ 22.99
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">CNG</td>
+                  <td></td>
+                  <td class="text-secondary text-end small-screen-font">
+                    $ 22.99
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold small-screen-font">LPG</td>
+                  <td></td>
+                  <td class="text-secondary text-end small-screen-font">
+                    $ 22.99
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!--Share Modal -->
+        <div
+          class="modal fade"
+          id="shareModal"
+          tabindex="-1"
+          aria-labelledby="shareModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Share</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-around align-items-center">
+                  <a class="nav-link text-theme-gray" href="#">
+                    <div class="d-flex flex-column gap-2 align-items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        class="bi bi-whatsapp"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                        />
+                      </svg>
+                      <span class="fw-bold">WHATSAPP</span>
+                    </div>
+                  </a>
+                  <a class="nav-link text-theme-gray" href="#">
+                    <div class="d-flex flex-column gap-2 align-items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        class="bi bi-instagram"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                        />
+                      </svg>
+                      <div class="fw-bold">INSTAGRAM</div>
+                    </div>
+                  </a>
+                  <a class="nav-link text-theme-gray" href="#">
+                    <div class="d-flex flex-column gap-2 align-items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        class="bi bi-facebook"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                        />
+                      </svg>
+                      <span class="fw-bold">FACEBOOK</span>
+                    </div>
+                  </a>
+                  <a class="nav-link text-theme-gray" href="#">
+                    <div class="d-flex flex-column gap-2 align-items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        class="bi bi-twitter"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                        />
+                      </svg>
+                      <span class="fw-bold">TWITTER</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- side nav -->
+          <div class="col-md-4 col-lg-3 col-xl-2 side-nav-container">
+            <ul class="nav side-nav d-flex flex-column my-4 gap-2">
+              <li class="nav-item active">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./index.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-home"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z"
+                    />
+                  </svg>
+                  <span class="fw-bold">HOME</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./calendars.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"
+                    />
+                    <path d="M16 3v4" />
+                    <path d="M8 3v4" />
+                    <path d="M4 11h16" />
+                    <path d="M7 14h.013" />
+                    <path d="M10.01 14h.005" />
+                    <path d="M13.01 14h.005" />
+                    <path d="M16.015 14h.005" />
+                    <path d="M13.015 17h.005" />
+                    <path d="M7.01 17h.005" />
+                    <path d="M10.01 17h.005" />
+                  </svg>
+                  <span class="fw-bold">NEWS CALENDAR</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./job-list.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M22 13.478v4.522a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-4.522l.553 .277a20.999 20.999 0 0 0 18.897 -.002l.55 -.275zm-8 -11.478a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v2.242l-1.447 .724a19.002 19.002 0 0 1 -16.726 .186l-.647 -.32l-1.18 -.59v-2.242a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3h4zm-2 8a1 1 0 0 0 -1 1a1 1 0 1 0 2 .01c0 -.562 -.448 -1.01 -1 -1.01zm2 -6h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1z"
+                    />
+                  </svg>
+                  <span class="fw-bold">JOBS</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="./event-list.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-megaphone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06"
+                    />
+                  </svg>
+                  <span class="fw-bold">EVENTS</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-headset"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+                    />
+                  </svg>
+                  <span class="fw-bold">CONTACT US</span>
+                </a>
+              </li>
+              <hr />
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/instagram-color.png" alt="instagram" />
+                  <span class="fw-bold">INSTAGRAM</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/youtube-color.png" alt="youtube" />
+                  <span class="fw-bold">YOUTUBE</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/facebook.png" alt="facebook" />
+                  <span class="fw-bold">FACEBOOK</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-theme-gray d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img src="./assets/twitter.png" alt="twitter" />
+                  <span class="fw-bold">TWITTER</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <article class="mt-4 border shadow rounded-1 py-1">
+              <div
+                class="d-flex justify-content-between align-items-end flex-column flex-xl-row"
+              >
+                <h4 class="news-heading mx-4 mt-2 mb-0">
+                  AMC Alert: હવામાન વિભાગ બાદ AMC એ જાહેર કર્યું એલર્ટ, બે દિવસ
+                  ઓરેન્જ અને ત્રણ દિવસ યલો એલર્ટ ઓરેન્જ અને ત્રણ દિવસ યલો એલર્ટ
+                  ઓરેન્જ અને ત્રણ દિવસ યલો એલર્ટ
+                  <br />
+                </h4>
+              </div>
+              <p class="mx-4 mb-2">
+                <span class="badge text-bg-secondary">Updated</span>
+              </p>
+              <figure class="mb-1">
+                <img src="./assets/PM-VP.png" alt="news-img" width="100%" />
+              </figure>
+              <div class="p-4">
+                <p class="custom-text-size">
+                  17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી
+                  44 નોંધાવાની શક્યતા છે. અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન
+                  નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ રહેશે.
+                </p>
+                <p class="custom-text-size">
+                  17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી
+                  44 નોંધાવાની શક્યતા છે. અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન
+                  નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ રહેશે.
+                </p>
+                <p class="custom-text-size">
+                  17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી
+                  44 નોંધાવાની શક્યતા છે. અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન
+                  નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ રહેશે.
+                </p>
+                <p class="custom-text-size">
+                  હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation
+                  issued alert) જાહેર કર્યું છે. આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ
+                  (orange alert) અને બાદના ત્રણ દિવસ માટે યલો એલર્ટ જાહેર (yello
+                  alert) કરવામાં આવ્યું છે. શનિવાર અને રવિવારે 44 ડિગ્રી (heat
+                  wave) રહેવાનું અનુમાન છે, જ્યારે સોમવાર,મંગળવાર અને બુધવારના
+                  રોજ તાપમાન 43 ડિગ્રી રહેવાનું અનુમાન છે.
+                </p>
+                <p class="custom-text-size">
+                  હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation
+                  issued alert) જાહેર કર્યું છે. આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ
+                  (orange alert) અને બાદના ત્રણ દિવસ માટે યલો એલર્ટ જાહેર (yello
+                  alert) કરવામાં આવ્યું છે. શનિવાર અને રવિવારે 44 ડિગ્રી (heat
+                  wave) રહેવાનું અનુમાન છે, જ્યારે સોમવાર,મંગળવાર અને બુધવારના
+                  રોજ તાપમાન 43 ડિગ્રી રહેવાનું અનુમાન છે.
+                </p>
+                <p class="custom-text-size">
+                  17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી
+                  44 નોંધાવાની શક્યતા છે. અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન
+                  નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ રહેશે.
+                  હવામાન વિભાગ બાદ AMC એ એલર્ટ (Ahmedabad municipal corporation
+                  issued alert) જાહેર કર્યું છે.
+                </p>
+                <p class="custom-text-size">
+                  આગામી બે દિવસ માટે ઓરેન્જ એલર્ટ (orange alert) અને બાદના ત્રણ
+                  દિવસ માટે યલો એલર્ટ જાહેર (yello alert) કરવામાં આવ્યું છે.
+                  શનિવાર અને રવિવારે 44 ડિગ્રી (heat wave) રહેવાનું અનુમાન છે,
+                  જ્યારે સોમવાર,મંગળવાર અને બુધવારના રોજ તાપમાન 43 ડિગ્રી
+                  રહેવાનું અનુમાન છે.
+                </p>
+                <p class="custom-text-size m-0">
+                  17 થી 22 મે દરમિયાન હિટ વેવનો રાઉન્ડ હશે. સરેરાશ તાપમાન 42 થી
+                  44 નોંધાવાની શક્યતા છે. અમુક જગ્યાઓએ 44 ડિગ્રીથી પણ વધુ તાપમાન
+                  નોંધાય એવી શક્યતા છે. પવનની ગતિ 22 મે સુધી નોર્મલ રહેશે.
+                </p>
+              </div>
+            </article>
+
+            <div class="px-4 border rounded shadow mt-4">
+              <div
+                class="d-flex justify-content-between align-items-center gap-4"
+              >
+                <div
+                  class="d-flex text-center flex-column justify-content-center align-items-center mt-3 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="30"
+                    viewBox="0 0 24 28"
+                    fill="none"
+                    stroke="#B71C1C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-thumb-up"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3"
+                    />
+                  </svg>
+                  10K.6 LIKE
+                </div>
+                <div
+                  class="d-flex text-center flex-column align-items-center mt-3 cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shareModal"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="30"
+                    fill="#B71C1C"
+                    class="bi bi-share-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"
+                    />
+                  </svg>
+                  SHARE
+                </div>
+                <div class="flex-grow-1 d-none d-sm-block"></div>
+                <div
+                  class="d-flex text-center flex-column align-items-center mt-3 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="30"
+                    fill="#B71C1C"
+                    class="bi bi-eye-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+                    />
+                  </svg>
+                  10K.6 VIEWS
+                </div>
+              </div>
+              <div class="text-end mb-1">
+                <small class="text-muted">Abhishek, 16 Jun 2024</small>
+              </div>
+            </div>
+
+            <h2 class="my-4 d-flex align-items-center fw-bold">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="30"
+                fill="#777777"
+                class="bi bi-newspaper"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                />
+                <path
+                  d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                />
+              </svg>
+              <span
+                class="px-1 pt-1 heading-container d-flex align-items-center"
+              >
+                MOST VIEWS SUGGESTION
+              </span>
+            </h2>
+            <div class="row g-3">
+              <div class="col-12">
+                <a href="./news-details.html" class="text-decoration-none">
+                  <div class="row border shadow rounded-1 m-0 p-0">
+                    <img
+                      src="./assets/news.png"
+                      alt="news"
+                      class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img"
+                    />
+                    <div class="ms-xl-2 mt-3 col">
+                      <h5 class="news-heading">
+                        અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: 
+                      </h5>
+                      <p class="m-0 news-subtitle text-dark">
+                        મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો
+                        સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
+                      </p>
+                      <div class="text-end text-secondary">
+                        <small>AUG 04, 2024 05:28 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="./news-details.html" class="text-decoration-none">
+                  <div class="row border shadow rounded-1 m-0 p-0">
+                    <img
+                      src="./assets/news.png"
+                      alt="news"
+                      class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img"
+                    />
+                    <div class="ms-xl-2 mt-3 col">
+                      <h5 class="news-heading">
+                        અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: 
+                      </h5>
+                      <p class="m-0 news-subtitle text-dark">
+                        મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો
+                        સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
+                      </p>
+                      <div class="text-end text-secondary">
+                        <small>AUG 04, 2024 05:28 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="./news-details.html" class="text-decoration-none">
+                  <div class="row border shadow rounded-1 m-0 p-0">
+                    <img
+                      src="./assets/news.png"
+                      alt="news"
+                      class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 m-0 p-0 news-img"
+                    />
+                    <div class="ms-xl-2 mt-3 col">
+                      <h5 class="news-heading">
+                        અધિકારીઓ ઓનલાઇન રિપોર્ટ ફાઇલ કરશે: 
+                      </h5>
+                      <p class="m-0 news-subtitle text-dark">
+                        મદરેસામાં બિનમુસ્લિમ બાળકોનો સરવે થશે, શિક્ષકોના પગારનો
+                        સ્ત્રોત પણ જણાવવો પડશે પહેલીવાર મેટ્રોમાં દૈનિક મુસાફરી.
+                      </p>
+                      <div class="text-end text-secondary">
+                        <small>AUG 04, 2024 05:28 pm</small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        $(document).ready(function () {
-            $('#drawerToggle').click(function () {
-                $('#smallDrawer').toggleClass('show');
-            });
-            $('#drawerMarketToggle').click(function () {
-                $('#smallMarketDrawer').toggleClass('show');
-            });
+      $(document).ready(function () {
+        $("#drawerToggle").click(function () {
+          $("#smallDrawer").toggleClass("show");
         });
+        $("#drawerMarketToggle").click(function () {
+          $("#smallMarketDrawer").toggleClass("show");
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>
