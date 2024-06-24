@@ -5,6 +5,21 @@
   font-style: normal;
 }
 
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;   
+  -ms-user-select: none;    
+  user-select: none;        
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 .focus-ring {
   --bs-focus-ring-color: #b71c1c;
   --bs-focus-ring-opacity: 0.1;

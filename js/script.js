@@ -25,3 +25,5 @@ document.getElementById("input-search").addEventListener("focusout", (e) => {
   let prefixSpan = document.getElementById("input-search-container");
   prefixSpan.classList.remove("shadow");
 });
+
+window.addEventListener(`contextmenu`, (e) => e.preventDefault());
